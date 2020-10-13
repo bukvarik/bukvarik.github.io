@@ -1,6 +1,6 @@
 // jshint esversion:6
 
-let button = document.querySelector('.press');
+let button = document.querySelector('.btn');
 let text = document.querySelector('.mainText');
 let backpacks = document.querySelector('.backpack');
 let authors = document.querySelector('.author');
@@ -47,7 +47,7 @@ function randomNick() {
   let randomColorIndex = Math.floor(Math.random() * colors.length);
   let randomAuthorName = Math.floor(Math.random() * authorNames.length);
   let randombackpackNames = Math.floor(Math.random() * backpackNames.length);
-  authors.innerHTML = '-' + authorNames[randomAuthorName].author;//цитата
+  authors.innerHTML = authorNames[randomAuthorName].author;//цитата
   backpacks.innerHTML =  backpackNames[randombackpackNames].backpack;//автор
   text.style.color = colors[randomColorIndex];
 }

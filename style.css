@@ -1,5 +1,10 @@
 .wrapper {
-
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  grid-row: row;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .box {
@@ -8,6 +13,11 @@
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  border: 2px solid black;
+  max-width: 40rem;
+  padding: 3rem;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 .nicknames {
@@ -18,4 +28,26 @@
 
 .backpack, .author {
   font-size: 32px;
+  margin: 12px 5px 15px;
 }
+
+.btn{
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  margin: 10px 20px;
+  font-size: 1.1em;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.btn:focus {
+  box-shadow: 0 0 11px rgba(10, 10, 10, 0.2); 
+}
+
+
